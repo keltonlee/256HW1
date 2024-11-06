@@ -1,19 +1,28 @@
-# 256HW1
+# 256HW2
 
-## Run 1a Glove embedding
+## Run Encoder Classifier
 ```console
-python main.py --model DAN --embedding GloVe
+python main.py --part 1
 ```
 
-## Run 1b Random embedding
+## Run Decoder Language Model
 ```console
-python main.py --model DAN --embedding random
+python main.py --part 2
 ```
 
-## Run 2a 
+## Run AliBi Decoder
 ```console
- python main.py --model SUBWORDDAN --embedding NAN 
+ python main.py --part 3 --type alibi
 ```
 
+## Run Sparse Attention Decoder
+```console
+ python main.py --part 3 --type sparse
+```
+
+## Run Disentangled Attention Decoder
+```console
+ python main.py --part 3 --type disentangled
+```
 
 
